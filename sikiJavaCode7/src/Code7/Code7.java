@@ -31,5 +31,26 @@ public class Code7 {
         int j = 10;
         System.out.println("i大于等于j的结果是" + (i >= j)
             + "，i小于等于j的结果是" + (i <= j));
+
+        int k = 10;
+        int l = 10;
+        System.out.println("k等于l的结果是" + (k == l)
+            + "，k不等于l的结果是" + (k != l));
+
+        // 字符也可以进行比较，但是注意，比较的内容是ASCII码，而不是字符本身
+        char m = 'a';
+        char n = 'b';
+        boolean o = m >= n;
+        boolean p = m <= n;
+        System.out.println("m的ASCII码大于等于n的结果是" + o
+                + "，m的ASCII码小于等于n的结果是" + p);
+
+
+        System.out.println("\n---------------------------------------------\n");
+
+
+        // 插入小知识点：如何知道某个字符对应的ASCII码呢？
+        int q = 'a';    // 定义一个int类型的变量q，其值其实就是字符a的ASCII码
+        System.out.println("字符a的ASCII码是" + q);
     }
 }
