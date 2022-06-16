@@ -19,5 +19,17 @@ public class Code7 {
         boolean c = a >= b;
         boolean d = a <= b;
         System.out.println("a大于等于b的结果是" + c + "，a小于等于b的结果是" + d);
+
+        int e = 10;
+        int f = 10;
+        boolean g = e == f;
+        boolean h = e != f;
+        System.out.println("c等于d的结果是" + g + "，c不等于d的结果是" + h);
+
+        // 或者可以直接输出：
+        int i = 11;
+        int j = 10;
+        System.out.println("i大于等于j的结果是" + (i >= j)
+            + "，i小于等于j的结果是" + (i <= j));
     }
 }
