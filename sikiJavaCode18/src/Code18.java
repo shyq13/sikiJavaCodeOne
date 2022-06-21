@@ -1,6 +1,7 @@
 public class Code18 {
     public static void main( String[] args ){
-        // break语句
+        // break与continue语句
+
         // break语句用于终止循环语句
         // break语句可以用于循环语句和switch语句
 
@@ -95,6 +96,21 @@ public class Code18 {
                     // 跳出outside标记的循环
                 }
             }
+        }
+
+
+        System.out.println("\n------------------------------------------------\n");
+
+
+        // continue语句用于跳过当前循环的剩余部分，继续下一次循环，例：
+        System.out.print("30以内的奇数有：");
+
+        for(int l = 0;l < 30; l++){
+            if(l % 2 == 0){
+                continue;
+                // 跳过当前循环的剩余部分，继续下一次循环
+            }
+            System.out.print(l + " ");
         }
     }
 }
