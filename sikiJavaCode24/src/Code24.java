@@ -73,5 +73,34 @@ public class Code24 {
         System.out.println("字符串str7和str9是否相等：" + str7.equals(str9));
         // 可以使用equals函数判断字符串是否相等
 
+
+        System.out.println("\n-----------------------------------------------------");
+
+
+        // 7. 判断字符串是否包含某个字符串
+        String str10 = "unityEngineer";
+        String str11 = "unity";
+        String str12 = "engineer";
+
+        System.out.println("字符串str10是否包含字符串str11：" + str10.contains(str11));
+
+        System.out.println("字符串str10是否包含字符串str12：" + str10.contains(str12));
+        // 可以使用contains函数判断字符串是否包含某个字符串
+
+
+        System.out.println("\n-----------------------------------------------------");
+
+
+        // 8. 判断字符串是否为空
+        String str13 = "Hello World";
+        String str14 = "";
+        String str15 = null;
+
+        System.out.println("字符串str13是否为空：" + str13.isEmpty());
+        System.out.println("字符串str14是否为空：" + str14.isEmpty());
+        // 可以使用isEmpty函数判断字符串是否为空
+
+        // System.out.println("字符串str15是否为空：" + str15.isEmpty());
+        // 由于str15为null，所以会抛出NullPointerException异常
     }
 }
