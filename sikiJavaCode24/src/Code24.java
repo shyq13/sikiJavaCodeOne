@@ -102,5 +102,53 @@ public class Code24 {
 
         // System.out.println("字符串str15是否为空：" + str15.isEmpty());
         // 由于str15为null，所以会抛出NullPointerException异常
+
+
+        System.out.println("\n-----------------------------------------------------");
+
+
+        // 9. 字母大小写转换
+        String str16 = "Hello world";
+        System.out.println("字符串str16的大写是：" + str16.toUpperCase());
+        // 可以使用toUpperCase函数将字符串转换为大写字符串
+        System.out.println("字符串str16的小写是：" + str16.toLowerCase());
+        // 可以使用toLowerCase函数将字符串转换为小写字符串
+
+
+        System.out.println("\n-----------------------------------------------------");
+
+
+        // 10. 字符串分割
+        String str17 = "www.baidu.com";
+
+        String[] strArray = str17.split("\\.");
+        // 定义一个数组，用于存储分割后的字符串
+        // 可以使用split函数将字符串分割为字符串数组，括号里的参数是分割的依据
+
+        System.out.print("分割后的字符串有：");
+        for (String temp : strArray) {
+            System.out.print("\"" + temp + "\"" + ", ");
+        }
+        System.out.println();
+
+        System.out.println("\n-----------------------------------------------------");
+
+
+        // 12. 字符串去空格
+        String str18 = "     Hello World     ";
+
+        System.out.println("字符串str18去空格前的字符串是：" + str18);
+        System.out.println("字符串str18去空格后的字符串是：" + str18.trim());
+        // 可以使用trim函数去除字符串前后的空格（注意：只能去除两段的空格，中间的不能去除）
+
+
+        System.out.println("\n-----------------------------------------------------");
+
+
+        // 13. 字符串替换
+        String str19 = "Unity World";
+        System.out.println("字符串str19替换前的字符串是：" + str19);
+        System.out.println("字符串str19替换后的字符串是：" + str19.replace(" World", "Engineer"));
+        // 可以使用replace函数替换字符串中的某个字符串为另一个字符串
     }
 }
